@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 from flask import Flask, render_template
 from brou_api import scraper_brou
 from brou_api import scraper_bs
