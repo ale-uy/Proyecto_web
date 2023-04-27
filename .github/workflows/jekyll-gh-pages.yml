@@ -26,7 +26,7 @@ jobs:
           source env/bin/activate
           flask build
       - name: Build Jekyll site
-        uses: helaili/jekyll-action@v2.0.0
+        uses: helaili/jekyll-action@v2
         with:
           # Set the path to your Jekyll site folder
           jekyll_src: ./
