@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Portfolio de Alejandro</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilos.css') }}" />
   </head>
   <body>
     <div id="contenedor">
       <div id="contenido">
         <h1>Bienvenidos a mi Portfolio</h1>
         <div class="foto">
-          <img src="src/proyecto.jpg" alt="Foto de perfil">
+          <img src="{{ url_for('static', filename='img/proyecto.jpg') }}" alt="Foto de perfil">
         </div>
         <div class="redes-sociales">
             <a href="https://github.com/lasm-uy"><button class="boton-redondo github"></button></a>
@@ -31,7 +31,6 @@
         </ul>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>
-

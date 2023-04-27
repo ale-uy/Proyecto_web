@@ -96,7 +96,7 @@ body {
   }
   
   body {
-    background: url('src/fondo.gif') repeat;
+    background: url('../img/fondo.gif') repeat;
   }
   
   .foto {
@@ -111,12 +111,12 @@ body {
   }
   
   .boton-redondo.github {
-    background-image: url('src/github-icon.svg');
+    background-image: url('../img/github-icon.svg');
     background-size: contain;
   }
   
   .boton-redondo.linkedin {
-    background-image: url('src/linkedin-icon.svg');
+    background-image: url('../img/linkedin-icon.svg');
     background-size: contain;
   }
   
