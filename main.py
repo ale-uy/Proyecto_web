@@ -32,4 +32,4 @@ def api_brou_2():
         return 'No funciona el scraper, error: {}'.format(e)
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
