@@ -23,7 +23,7 @@ def api_brou():
     except Exception as e:
         return 'No funciona el scraper, error: {}'.format(e)
 
-@app.get("/brou/v2")
+@app.get("/brou")
 def api_brou_2():
     try:
         datos = scraper_bs.query()
@@ -32,4 +32,4 @@ def api_brou_2():
         return 'No funciona el scraper, error: {}'.format(e)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
