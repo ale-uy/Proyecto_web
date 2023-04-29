@@ -1,0 +1,13 @@
+[build]
+  command = "pip install -r requirements.txt && python main.py"
+  publish = "templates"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
